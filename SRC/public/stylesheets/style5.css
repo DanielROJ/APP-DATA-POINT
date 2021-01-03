@@ -1,0 +1,106 @@
+body{
+  background-color: #205d8fcc;
+}
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+.ventas{
+  padding: 0 30px;
+  margin: o auto;
+  position: absolute;
+  top: 400px;
+  right: 200px;
+}
+.clientes{
+  padding: 0 30px;
+  margin: o auto;
+  position: absolute;
+  top: 470px;
+  right: 200px;
+}
+.total{
+  padding: 0 30px;
+  margin: o auto;
+  position: absolute;
+  top: 540px;
+  right: 200px;
+}
+.l1{
+  position: absolute;
+  top: 365px;
+  right: 274px;
+}
+.l2{
+  position: absolute;
+  top: 435px;
+  right: 270px;
+}
+.l3{
+  position: absolute;
+  top: 505px;
+  right: 240px;
+}
+.PROCESAR{
+  background-color: yellow;
+  border: 2px solid black;
+  padding: 4px 55px;
+  position: absolute;
+  top: 505px;
+  left: 50px;
+}
+.fecha{
+  position: absolute;
+  top: 415px;
+  left: 75px;
+}
+.f1{
+  position: absolute;
+  top: 395px;
+  left: 79px;
+}
+.f2{
+  position: absolute;
+  top: 450px;
+  left: 79px;
+}
+.fecha2{
+  position: absolute;
+  top: 470px;
+  left: 75px;
+}
+.bien{
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  background-color: grey;
+}
+.inpusr{
+  background-color: grey;
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+#map{
+  min-width: 310px;
+  height: 300px;
+  max-width: 500px;
+  margin: 0 auto;
+}

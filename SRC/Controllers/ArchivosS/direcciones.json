@@ -1,0 +1,35 @@
+[
+	{
+		"latitud": 4.725799 ,"longitud": -74.069814, "marca":"Toyota", "precio": 83000000
+	},
+	{
+		"latitud": 4.732619,"longitud": -74.052782, "marca":"Lexus", "precio": 123000000
+	},
+	{
+		"latitud": 4.715981,"longitud": -74.060170, "marca":"Cadillac", "precio": 164000000
+	},
+	{
+		"latitud": 4.721869,"longitud": -74.045998, "marca":"Toyota", "precio": 53400000
+	},
+	{
+		"latitud": 4.673826,"longitud": -74.092103, "marca":"Toyota", "precio": 89000000
+	},
+	{
+		"latitud": 4.697631,"longitud": -74.102793, "marca":"Lexus", "precio": 210000000
+	},
+	{
+		"latitud": 4.722347,"longitud": -74.089950, "marca":"Lexus", "precio": 189000000
+	},
+	{
+		"latitud": 4.754183,"longitud": -74.044336, "marca":"Toyota", "precio": 79800000
+	},
+	{
+		"latitud": 4.628110,"longitud": -74.074860, "marca":"Land Rover", "precio": 210000000
+	},
+	{
+		"latitud": 4.610414,"longitud": -74.125607, "marca":"Toyota", "precio": 83000000
+	},
+	{
+		"latitud": 4.580746,"longitud": -74.118754, "marca":"Toyota", "precio": 110000000
+	}
+]
