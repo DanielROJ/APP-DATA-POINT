@@ -7,13 +7,12 @@
 var app = require('../app');
 var debug = require('debug')('pybg:server');
 var http = require('http');
-const conf = require('../config.js');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = conf.port;
+var port = process.env.PORT;
 app.set('port', port);
 
 

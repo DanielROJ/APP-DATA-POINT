@@ -1,8 +1,8 @@
 'use strict' 
-const conf = require('../../config.js')
+
 
 const {Pool,Client} = require('pg')
-const connectionString = conf.uriDB;
+const connectionString = process.env.URIDB;
 
 
 

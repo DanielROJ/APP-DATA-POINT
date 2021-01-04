@@ -47,9 +47,10 @@ app.use(session({
 
 // view engine setup
 app.engine('hbs', hbs.express4({
-  partialsDir: __dirname + '/views'
+  partialsDir: __dirname + '/views/'  
+
 }));
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views')); 
 app.set('view engine', 'hbs');
 
 //Enable static public files (Css,JS, HTML)

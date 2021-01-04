@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/stylesheets/style5.css">
+		<title>Vista Visualizacion</title>
+	</head>
+	<body>
+
+<h2> Se muestran datos del :  {{fechaInicial}} ---- {{fechaFinal}}</h2>
+<br>
+<br>
+<br>
+<h3>Usuario :----- {{nombre}} -----</h3>
+<br>
+<br>
+<br>
+<h3>ROL :  ------ {{rol}} -----</h3>	
+
+
+		<div>
+		<button name="mapa" class="mapa" id="boton">MAP VIEW</button>
+		<button name="boton" class="PROCESAR1" id="pie" onclick="f()">PIE VIEW</button>
+		<button name="boton2" class="PROCESAR2" id ="barras">CARGAR DATOS</button>
+		<button id="nose">Grafica de barras</button>
+        <label class="l1">Total ventas: </label>
+  	    <label class="l2">Total clientes: </label>
+  	    <label class="l3">Total Establecimientos: </label>
+		<label class="f1">fecha inicial: </label>
+		<label class="f2">fecha final: </label>
+</div>
+		
+  	<form method="post" name="deTodito"   action="/users/visor">
+    	<input name="TotalVentas" class="ventas" type="text" readonly>
+    	<input name="TotalClientes" type="text" class="clientes" readonly>
+    	<input name="TotalEstablecimientos" type="text" class="total" readonly>
+    	<input name="fecha" class="fecha" type="date" min="2018-11-01" max="2018-12-01" required>
+		<input name="fecha2" class="fecha2" type="date" min="2018-11-01" max="2018-12-01" required>
+		<input type="submit" name="procesar" class="PROCESAR" value="PROCESAR">
+  	</form>
+			<script src="/javascripts/barras.js"></script>
+			<script src="/javascripts/highcharts.js"></script>
+			<script src="/javascripts/exporting.js"></script>
+			<script src="/javascripts/export-data.js"></script>
+			<script src="/javascripts/main.js"></script>
+            <script src="/javascripts/data.js"></script>
+
+
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1ZbKJFmlOd12sPXkhF6XRmglAarB-2Gw"></script>dc893d2
+
+			<div id="container" style="min-width: 400px; height: 400px; max-width: 500px; margin: 0 auto"></div>
+			<br>
+			<br>
+			
+			
+			<div id="tablilla" style="height: 100px;  margin: 0 auto">
+				<table id="datatable">
+					<thead>
+						<tr>
+							<th>MARCA</th>
+							<th>N ventas</th>
+						</tr>
+					</thead>
+
+					<tbody id="res"></tbody>		
+				</table>
+			</div>
+
+
+
+					<script type="text/javascript">
+						function f(){
+								Highcharts.chart('container', {
+								    chart: {
+								        plotBackgroundColor: null,
+								        plotBorderWidth: null,
+								        plotShadow: false,
+								        type: 'pie'
+								    },
+								    title: {
+								        text: 'Gráfica de ventas'
+								    },
+								    tooltip: {
+								        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+								    },
+								    plotOptions: {
+								        pie: {
+								            allowPointSelect: true,
+								            cursor: 'pointer',
+								            dataLabels: {
+								                enabled: true,
+								                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+								                style: {
+								                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+								                }
+								            }
+								        }
+								    },
+								    series: [{
+								        name: 'Brands',
+								        colorByPoint: true,
+								        data: [{
+								            name: 'Chrome',
+								            y: 61.41,
+								            sliced: true,
+								            selected: true
+								        }, {
+								            name: 'Internet Explorer',
+								            y: 11.84
+								        }, {
+								            name: 'Firefox',
+								            y: 10.85
+								        }, {
+								            name: 'Edge',
+								            y: 4.67
+								        }, {
+								            name: 'Safari',
+								            y: 4.18
+								        }, {
+								            name: 'Sogou Explorer',
+								            y: 1.64
+								        }, {
+								            name: 'Opera',
+								            y: 1.6
+								        }, {
+								            name: 'QQ',
+								            y: 1.2
+								        }, {
+								            name: 'Other',
+								            y: 2.61
+								        }]
+								    }]
+								});
+							}
+					</script>
+	</body>
+</html>

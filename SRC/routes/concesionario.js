@@ -6,7 +6,7 @@ const control = require('../Controllers/moduloControl.js')
 
 
 router.get("/view/principal",(req, res, next)=>{
-    res.render("view_concesionario.hbs")
+    res.render("Views_Concesionario/view_concesionario.hbs") 
 })
 
 

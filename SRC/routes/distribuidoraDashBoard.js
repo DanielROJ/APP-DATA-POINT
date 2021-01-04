@@ -7,7 +7,7 @@ const control = require('../Controllers/moduloControl.js')
 
 
 router.get("/view/principal",(req, res, next)=>{
-    res.render("view_dashboard.hbs")
+    res.render("Views_Distribuidora/view_dashboard.hbs")
 })
 
 
